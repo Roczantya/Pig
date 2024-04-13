@@ -1,0 +1,130 @@
+body {
+  background-color: rgb(238, 250, 12);
+}
+ 
+.pig{
+  width: 600px;
+}
+.ears::before,.ears::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  width: 0;
+  height: 0;
+  border-right: 60px solid transparent;
+  border-left: 60px solid transparent;
+  border-top: 60px solid #d6778f;
+  z-index: 1;
+}
+.ears {
+  position: relative;
+  width: 400px;
+  height: 80px;
+  display: block;
+  border-radius: 50%;
+  margin: 50px auto 0px;
+}
+
+.ears::before {
+  left: 0px;
+  transform: rotate(-30deg);
+}
+
+.ears::after {
+  right: 0px;
+  transform: rotate(30deg);
+}
+
+.head{
+  width: 360px;
+  height: 280px;
+  border: 1px solid transparent;
+  background-color: rgb(218, 139, 152);
+  border-radius: 60%;
+  position: relative;
+  display: block;
+  margin: -100px auto 0px;
+}
+
+.eye::before, .eye::after{
+  content: '';
+  background:white ;
+  width: 45px;
+  height: 60px;
+  border: 3px solid black;
+  border-radius: 50%;
+  position: absolute;
+}
+.eye{
+  width: 100px;
+  margin: 50px auto ;
+  position: relative;
+}
+.eye::before{
+  left: -15px;
+}
+.eye::after{
+  right: -15px;
+}
+
+.eye-ball::before,.eye-ball::after{
+  content: '';
+  background:rgb(18, 18, 18) ;
+  width: 21px;
+  height: 35px;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.eye-ball{
+  width: 75px;
+  margin: 0 auto ;
+  position: relative;
+  z-index: 1;
+}
+
+.eye-ball::before{
+  left: -3px;
+  top: 10px;
+}
+.eye-ball::after{
+  right: -3px;
+  top: 10px;
+}
+
+.nose{
+  width: 170px;
+  height: 90px;
+  background-color: #c94264;
+  border-radius: 50%;
+  position: relative;
+  display: block;
+  margin: 130px auto 0;
+}
+
+
+.nostril::before,.nostril::after {
+  content: '';
+  background-color: rgb(17, 14, 14);
+  width: 30px;
+  height: 50px;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.nostril {
+  width: 45px;
+  margin: 130px auto;
+  display: block;
+  padding-top: 15px;
+  position: relative;
+}
+
+.nostril::before {
+  left: -20px;
+}
+.nostril::after {
+  right:-20px;
+}
+
+
